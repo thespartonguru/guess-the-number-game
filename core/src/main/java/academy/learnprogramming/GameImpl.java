@@ -23,7 +23,7 @@ public class GameImpl implements Game {
     private int remainingGuesses;
     private boolean validNumberRange = true;
 
-    //init
+    //inititialization
     @PostConstruct
     @Override
     public void reset() {
