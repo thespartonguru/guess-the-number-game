@@ -22,7 +22,6 @@ public class GameImpl implements Game {
     private int biggest;
     private int remainingGuesses;
     private boolean validNumberRange = true;
-
     // ##################init##########################
     @PostConstruct
     @Override
