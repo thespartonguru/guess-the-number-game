@@ -23,7 +23,7 @@ public class GameImpl implements Game {
     private int remainingGuesses;
     private boolean validNumberRange = true;
 
-    //init
+    // ##################init##########################
     @PostConstruct
     @Override
     public void reset() {
@@ -40,7 +40,7 @@ public class GameImpl implements Game {
         log.info("pre destroy");
     }
 
-    // public methods
+    // ######################public methods###################
 
     @Override
     public int getNumber() {
@@ -105,7 +105,7 @@ public class GameImpl implements Game {
         return !isGameWon() && remainingGuesses <= 0;
     }
 
-    // private methods
+    // ###################private methods##################
     private void checkValidNumberRange() {
         validNumberRange = (guess >= smallest) && (guess <= biggest);
     }
